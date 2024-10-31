@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <title>Dashboard | Voltic</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main2.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Estilo para el submenú */
+        #submenu {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        #submenu ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+        #submenu li {
+            margin: 0 15px;
+        }
+        #submenu a {
+            text-decoration: none;
+            color: #333; /* Cambia el color según sea necesario */
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header" class="alt" style="margin-top: 20px;">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Voltic Logo" style="height: 40px;"/>
+            </a>
+            <nav>
+                <a href="#menu">Menú</a>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="funcionalidades.html">Funcionalidades</a></li>
+                <li><a href="sobre.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <ul class="actions stacked">
+                <li><a href="login.html" class="button fit">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main" class="alt">
+            <section id="dashboard" class="major">
+                <div class="inner">
+                    <header class="major">
+                        <h2>Bienvenido, <span id="username"></span></h2>
+                        <p>Rol: <span id="userRole"></span></p>
+                    </header>
+
+                    <!-- Tabla de Usuarios -->
+                    <section id="usersSection">
+                        <header class="major">
+                            <h3>Usuarios Registrados</h3>
+                        </header>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Correo</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody id="usersTableBody">
+                                <!-- Aquí se insertarán las filas de usuarios con JavaScript -->
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="copyright">
+                    <li>&copy; Voltic</li>
+                    <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="assets/js/dashboard.js"></script> <!-- Archivo JavaScript para el dashboard -->
+</body>
+</html>
